@@ -1,0 +1,106 @@
+.about_content .nav {
+    height: 20px;
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+.about_content .nav span:nth-child(2) {
+    position: relative;
+    margin-right: 10px;
+}
+
+.about_content .nav span:last-child {
+    color: #668aca;
+}
+
+.about_content .nav span:nth-child(2)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    width: 5px;
+    height: 5px;
+    transform: translateY(-46%);
+    background: url(../images/project/箭头.png)no-repeat;
+}
+
+.about_content .c-title {
+    margin-top: 30px;
+}
+
+.about_content .about_list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.about_content .about_list .about_item {
+    position: relative;
+    width: 550px;
+    height: 200px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+}
+
+.about_list .resume {
+    position: absolute;
+    top: 50%;
+    left: 220px;
+    width: 325px;
+    height: 135px;
+    font-size: 12px;
+    text-align: justify;
+    color: #6b6b6b;
+    line-height: 22px;
+    font-weight: 300;
+    transform: translateY(-50%);
+}
+
+.about_list .resume .line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 1px;
+    background-color: #e2e2e2;
+}
+
+.about_list .resume .name {
+    font-size: 18px;
+}
+
+.about_list .resume .position {
+    font-size: 14px;
+}
+
+.about_list .resume .text {
+    margin-top: 15px;
+}
+
+.about_mission {
+    position: relative;
+    margin-top: 65px;
+}
+
+.about_mission .text {
+    width: 610px;
+    font-size: 14px;
+    color: #989898;
+}
+
+.about_mission .text p:first-child {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.about_mission .mission_img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 500px;
+    height: 300px;
+}
+
+.footer {
+    margin-top: 200px;
+}

@@ -1,0 +1,148 @@
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+.main {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.topnav_bgc {
+    width: 100%;
+    box-shadow: 0px 15px 10px -10px rgba(204, 204, 204, 0.2);
+}
+
+.topnav {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+.topnav .logo {
+    float: left;
+    width: 220px;
+    height: 52px;
+    margin-top: 24px;
+    background: url(../images/logo.png)no-repeat;
+    background-size: cover;
+}
+
+.topnav .topnav-list {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.topnav .topnav-list .topnav-item {
+    position: relative;
+    float: left;
+    font-size: 14px;
+    margin-left: 82px;
+}
+
+.topnav-list .topnav-item a {
+    display: block;
+    width: 36px;
+    height: 17px;
+    line-height: 17px;
+    color: #767676;
+}
+
+.topnav .topnav-list .topnav-item.active a {
+    font-size: 18px;
+    color: #668aca;
+}
+
+.topnav-list .topnav-item span {
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    width: 20px;
+    height: 1px;
+    transform: translateX(-50%);
+    background-color: #668aca;
+    opacity: 0;
+}
+
+.topnav .topnav-list .active span {
+    opacity: 1;
+}
+
+.topnav-list .topnav-item:hover span {
+    opacity: 1;
+}
+
+.topnav-list .topnav-item:hover a {
+    font-size: 18px;
+    color: #668aca;
+}
+
+.footer {
+    height: 262px;
+    width: 100%;
+    margin-top: 200px;
+    background-color: #f7f7f7;
+}
+
+.footer .footer-content {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.footer .footer-content ul {
+    float: left;
+    font-size: 14px;
+    color: #767676;
+    margin-top: 95px;
+}
+
+.footer .footer-content ul li {
+    margin-bottom: 10px;
+}
+
+.footer .footer-content ul:not(:nth-child(1)) {
+    margin-left: 120px;
+    padding-left: 60px;
+    border-left: 1px solid #e9e9e9;
+}
+
+
+/* 同种样式小标题 */
+
+.c-title {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    color: #767676;
+}
+
+.c-title .title-l {
+    float: left;
+}
+
+.c-title .title-l span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 60px;
+    background-color: #a1a1a1;
+}
+
+.c-title .title-l .name {
+    font-size: 30px;
+}
+
+.c-title .title-l .ename {
+    font-size: 12px;
+}
+
+.c-title .title-r {
+    float: right;
+    width: 300px;
+    height: 59px;
+    border-bottom: 1px solid #a1a1a1;
+}

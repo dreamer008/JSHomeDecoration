@@ -1,0 +1,69 @@
+.service_content .nav {
+    height: 20px;
+    line-height: 20px;
+    margin-top: 20px;
+    color: #767676;
+}
+
+.service_content .nav span:nth-child(2) {
+    position: relative;
+    margin-right: 10px;
+}
+
+.service_content .nav span:last-child {
+    color: #668aca;
+}
+
+.service_content .nav span:nth-child(2)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    width: 5px;
+    height: 5px;
+    transform: translateY(-46%);
+    background: url(../images/project/箭头.png)no-repeat;
+}
+
+.service_content .nav {
+    margin-top: 50px;
+}
+
+
+/* ------ */
+
+.service_content .content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+
+.service_content .content .service_list {
+    width: 370px;
+}
+
+.service_content .content .service_list .service_item {
+    margin-bottom: 15px;
+    /* overflow: hidden; */
+}
+
+.service_content .content .text {
+    font-size: 14px;
+    color: #989898;
+    white-space: normal;
+    word-break: break-all;
+    margin: 18px 0;
+    /* margin-top: 15px;
+    margin-bottom: 20px; */
+}
+
+.service_content .service_list .line {
+    width: 328px;
+    height: 1px;
+    background-color: #f0f0f0;
+}
+
+.service_content .service_list img {
+    width: 750px;
+    height: 400px;
+}

@@ -1,0 +1,210 @@
+.project .project_content {
+    margin-top: 50px;
+}
+
+.project .project_content .content {
+    margin-bottom: 60px;
+}
+
+.project .project_content .project_nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 14px;
+    color: #767676;
+}
+
+.project_content .project_nav .nav_l {
+    height: 20px;
+    line-height: 20px;
+}
+
+.project_content .project_nav .nav_l span:nth-child(2) {
+    position: relative;
+    margin-right: 10px;
+}
+
+.project_content .project_nav .nav_l span:last-child {
+    color: #668aca;
+}
+
+.project_content .project_nav .nav_l span:nth-child(2)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    width: 5px;
+    height: 5px;
+    transform: translateY(-46%);
+    background: url(../images/project/箭头.png)no-repeat;
+}
+
+.project .project_content .nav_list {
+    width: fit-content;
+    color: #767676;
+}
+
+.project_content .nav_list .nav_item {
+    position: relative;
+    float: left;
+    width: 40px;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 35px;
+}
+
+.project_content .nav_list .nav_item a {
+    color: #767676;
+}
+
+.project_content .nav_list .nav_item:not(:nth-child(1)):before {
+    content: "";
+    position: absolute;
+    left: -35px;
+    top: 50%;
+    width: 1px;
+    height: 8px;
+    transform: translateY(-50%);
+    background-color: #b5b5b5;
+}
+
+.project_content .nav_list .nav_item::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    width: 12px;
+    height: 1px;
+    transform: translateX(-50%);
+    background-color: #668aca;
+}
+
+.project_content .nav_list .nav_item::after {
+    display: none;
+}
+
+.project_content .nav_list .nav_item:hover:after {
+    display: block;
+}
+
+.project_content .nav_list .nav_item:hover a {
+    font-size: 16px;
+    color: #668aca;
+}
+
+.project_content .nav_list .active.nav_item a {
+    font-size: 16px;
+    color: #668aca;
+}
+
+.project_content .nav_list .active.nav_item:after {
+    display: block;
+}
+
+
+/* 项目列表 ---------*/
+
+.project_content .project_list {
+    margin-top: 55px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project_content .project_list .content_item {
+    position: relative;
+    width: 360px;
+    height: 270px;
+    border-radius: 8px;
+    margin-bottom: 18px;
+}
+
+.project_content .project_list .content_item .small {
+    width: 360px;
+    height: 180px;
+    border-radius: 8px;
+}
+
+.project_content .project_list .content_item .big {
+    display: none;
+    width: 360px;
+    height: 270px;
+    border-radius: 8px;
+}
+
+.project_content .project_list .explain {
+    margin-top: 20px;
+    margin-left: 50px;
+    color: #767676;
+    line-height: 22px;
+}
+
+.project_content .project_list .explain p:first-child {
+    font-size: 14px;
+}
+
+.project_content .project_list .explain p:nth-child(2) {
+    font-size: 12px;
+}
+
+.project_content .project_list .on {
+    position: absolute;
+    right: 50px;
+    bottom: 30px;
+    width: 30px;
+    height: 30px;
+    background: url(../images/on1.png) no-repeat center;
+    z-index: 3;
+}
+
+.project_content .project_list .mask {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 360px;
+    height: 270px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 300;
+    background-color: #000000;
+    border-radius: 8px;
+    opacity: 0.5;
+}
+
+.project_content .project_list .mask .text {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.project_list .mask p:first-child {
+    font-size: 14px;
+}
+
+.project_list .mask p:last-child {
+    margin-top: 10px;
+    width: 252px;
+    line-height: 20px;
+}
+
+.project_content .project_list .active.content_item:hover .big {
+    display: block;
+}
+
+.project_content .project_list .active.content_item:hover .small {
+    display: none;
+}
+
+.project_content .project_list .active.content_item:hover .explain {
+    display: none;
+}
+
+.project_content .active.content_item:hover .on {
+    bottom: 60px;
+    height: 36px;
+    background: url(../images/on2.png) no-repeat center;
+}
+
+.project_content .project_list .active.content_item:hover .mask {
+    display: block;
+}
