@@ -2,6 +2,7 @@
     height: 20px;
     line-height: 20px;
     margin-top: 20px;
+    color: #767676;
 }
 
 .about_content .nav span:nth-child(2) {
@@ -12,7 +13,9 @@
 .about_content .nav span:last-child {
     color: #668aca;
 }
-
+.about_content .nav {
+    margin-top: 50px;
+}
 .about_content .nav span:nth-child(2)::after {
     content: '';
     position: absolute;
